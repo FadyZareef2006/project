@@ -5,13 +5,13 @@ import EVICO from '../assets/EVICO.png';
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-amber-800">
+    <footer className="bg-black text-amber-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center">
               <img src={EVICO} className="h-8 mt-2 w-8 text-blue-600" />
-              <span className="ml-2 text-xl font-bold">EVICO Contractors</span>
+              <span className="ml-2 text-xl font-bold">EVICO Constracting L.L.C</span>
             </div>
             <p className="mt-4 text-amber-500">
               Building excellence through quality craftsmanship and dedication to customer satisfaction.
@@ -19,12 +19,12 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold text-amber-800 mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-amber-300 mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/services" className="text-amber-500 hover:text-white">Services</Link></li>
-              <li><Link to="/projects" className="text-amber-500 hover:text-white">Projects</Link></li>
-              <li><Link to="/about" className="text-amber-500 hover:text-white">About Us</Link></li>
-              <li><Link to="/contact" className="text-amber-500 hover:text-white">Contact</Link></li>
+              <li><Link to="/services" className="text-amber-500 hover:text-amber-300">Services</Link></li>
+              <li><Link to="/projects" className="text-amber-500 hover:text-amber-300">Projects</Link></li>
+              <li><Link to="/about" className="text-amber-500 hover:text-amber-300">About Us</Link></li>
+              <li><Link to="/contact" className="text-amber-500 hover:text-amber-300">Contact</Link></li>
             </ul>
           </div>
           
@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-amber-500 mt-8 pt-8 text-center text-amber-500">
-          <p>&copy; {new Date().getFullYear()} EVICO Contractors. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} EVICO Constracting L.L.C. All rights reserved.</p>
         </div>
       </div>
     </footer>

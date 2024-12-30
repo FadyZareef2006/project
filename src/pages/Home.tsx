@@ -17,19 +17,19 @@ export default function Home() {
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-          <div className="text-amber-500">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Building Your Vision,<br />Exceeding Expectations
+          <div className="text-amber-300">
+            <h1 className="text-4xl md:text-4xl font-bold mb-6">
+            HIGHEST POSSIBLE STANDERED OF QUALITY.
             </h1>
             <p className="text-xl mb-8 max-w-2xl">
-              EVICO Contractors delivers exceptional construction services with unmatched quality and professionalism.
+              EVICO Contracting L.L.C delivers exceptional construction services with unmatched quality and professionalism.
             </p>
             <div className="space-x-4">
-              <Link to="/quote" className="bg-amber-500 text-black px-8 py-3 rounded-md hover:bg-amber-800 inline-flex items-center">
+              <Link to="/quote" className="bg-amber-300 text-black px-8 py-3 rounded-md hover:bg-amber-500 inline-flex items-center">
                 Get Started <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
-              <Link to="/projects" className="bg-amber-500 text-black
-               px-8 py-3 rounded-md hover:bg-amber-800">
+              <Link to="/projects" className="bg-amber-300 text-black
+               px-8 py-3 rounded-md hover:bg-amber-500">
                 View Our Work
               </Link>
             </div>
@@ -41,8 +41,8 @@ export default function Home() {
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-amber-500 mb-4">Our Services</h2>
-            <p className="text-amber-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-amber-300 mb-4">Our Services</h2>
+            <p className="text-amber-500 max-w-2xl mx-auto">
               We offer comprehensive construction services tailored to meet your specific needs.
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function Home() {
                 description: 'Quality renovations that transform spaces and add value.'
               }
             ].map((service, index) => (
-              <div key={index} className="bg-amber-500 p-8 rounded-lg text-center shadow-lg hover:shadow-lg transition-shadow">
+              <div key={index} className="bg-amber-300 p-8 rounded-lg text-center shadow-lg hover:shadow-lg transition-shadow">
                 <div className="flex justify-center mb-4">{service.icon}</div>
                 <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
@@ -79,8 +79,8 @@ export default function Home() {
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-amber-500 mb-4">Why Choose Us</h2>
-            <p className="text-amber-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-amber-300 mb-4">Why Choose Us</h2>
+            <p className="text-amber-500 max-w-2xl mx-auto">
               With years of experience and a commitment to excellence, we're your trusted partner in construction.
             </p>
           </div>
@@ -97,8 +97,8 @@ export default function Home() {
               'Free Consultations'
             ].map((feature, index) => (
               <div key={index} className="flex items-center space-x-2">
-                <CheckCircle2 className="h-5 w-5 text-amber-800 flex-shrink-0" />
-                <span className="text-amber-500">{feature}</span>
+                <CheckCircle2 className="h-5 w-5 text-amber-500 flex-shrink-0" />
+                <span className="text-amber-300">{feature}</span>
               </div>
             ))}
           </div>
@@ -108,13 +108,13 @@ export default function Home() {
       {/* CTA Section */}
       <section className="bg-black py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-amber-500 mb-4">
+          <h2 className="text-3xl font-bold text-amber-300 mb-4">
             Ready to Start Your Project?
           </h2>
-          <p className="text-amber-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-amber-500 mb-8 max-w-2xl mx-auto">
             Contact us today for a free consultation and quote. Let's bring your vision to life.
           </p>
-          <Link to="/contact" className="bg-amber-500 text-black px-8 py-3 rounded-md hover:bg-amber-800 inline-flex items-center">
+          <Link to="/contact" className="bg-amber-300 text-black px-8 py-3 rounded-md hover:bg-amber-500 inline-flex items-center">
             Contact Us <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
         </div>

@@ -16,7 +16,7 @@ export default function About() {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
           <div className="text-white">
-            <h1 className="text-4xl font-bold mb-4">About EVICO Contractors</h1>
+            <h1 className="text-4xl font-bold mb-4">About EVICO Contracting L.L.C</h1>
             <p className="text-xl max-w-2xl">
               Building excellence through quality craftsmanship and dedication to customer satisfaction since 1998.
             </p>
@@ -123,7 +123,7 @@ export default function About() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our History</h2>
               <div className="space-y-4">
                 <p className="text-gray-600">
-                  Founded in 1998, EVICO Contractors has grown from a small local contractor to one of the region's most respected construction companies.
+                  Founded in 1998, EVICO Contracting L.L.C has grown from a small local contractor to one of the region's most respected construction companies.
                 </p>
                 <p className="text-gray-600">
                   Over the past 25 years, we've completed hundreds of successful projects across residential, commercial, and industrial sectors, earning numerous industry awards and certifications along the way.
