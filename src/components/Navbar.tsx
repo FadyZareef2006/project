@@ -45,11 +45,11 @@ export default function Navbar() {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 text-amber-500 space-y-1 sm:px-3">
             <Link to="/" className="block px-3 py-2 hover:text-amber-800">Home</Link>
-            <Link to="/services" className="block px-3 py-2 hover:text-blue-600">Services</Link>
-            <Link to="/projects" className="block px-3 py-2 hover:text-blue-600">Projects</Link>
-            <Link to="/about" className="block px-3 py-2 hover:text-blue-600">About</Link>
-            <Link to="/contact" className="block px-3 py-2 hover:text-blue-600">Contact</Link>
-            <Link to="/quote" className="block px-3 py-2 bg-amber-500 text-black rounded-md">Get a Quote</Link>
+            <Link to="/services" className="block px-3 py-2 hover:text-amber-800">Services</Link>
+            <Link to="/projects" className="block px-3 py-2 hover:text-amber-800">Projects</Link>
+            <Link to="/about" className="block px-3 py-2 hover:text-amber-800">About</Link>
+            <Link to="/contact" className="block px-3 py-2 hover:text-amber-800">Contact</Link>
+            <Link to="/quote" className="block px-3 py-2 bg-amber-500 text-black rounded-md hover:bg-amber-800">Get a Quote</Link>
           </div>
         </div>
       )}
