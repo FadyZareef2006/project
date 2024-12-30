@@ -9,15 +9,15 @@ export default function Home() {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd"
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd" 
             alt="Construction site"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <div className="absolute inset-0 bg-black opacity-80"></div>
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-          <div className="text-white">
+          <div className="text-amber-500">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Building Your Vision,<br />Exceeding Expectations
             </h1>
@@ -28,8 +28,8 @@ export default function Home() {
               <Link to="/quote" className="bg-amber-500 text-black px-8 py-3 rounded-md hover:bg-amber-800 inline-flex items-center">
                 Get Started <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
-              <Link to="/projects" className="bg-amber-800 text-black
-               px-8 py-3 rounded-md hover:bg-gray-100">
+              <Link to="/projects" className="bg-amber-500 text-black
+               px-8 py-3 rounded-md hover:bg-amber-800">
                 View Our Work
               </Link>
             </div>
@@ -98,7 +98,7 @@ export default function Home() {
             ].map((feature, index) => (
               <div key={index} className="flex items-center space-x-2">
                 <CheckCircle2 className="h-5 w-5 text-amber-800 flex-shrink-0" />
-                <span className="text-amber-600">{feature}</span>
+                <span className="text-amber-500">{feature}</span>
               </div>
             ))}
           </div>
@@ -114,7 +114,7 @@ export default function Home() {
           <p className="text-amber-600 mb-8 max-w-2xl mx-auto">
             Contact us today for a free consultation and quote. Let's bring your vision to life.
           </p>
-          <Link to="/contact" className="bg-amber-800 text-black px-8 py-3 rounded-md hover:bg-gray-100 inline-flex items-center">
+          <Link to="/contact" className="bg-amber-500 text-black px-8 py-3 rounded-md hover:bg-amber-800 inline-flex items-center">
             Contact Us <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
         </div>
