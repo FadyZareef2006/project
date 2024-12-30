@@ -25,10 +25,11 @@ export default function Home() {
               EVICO Contractors delivers exceptional construction services with unmatched quality and professionalism.
             </p>
             <div className="space-x-4">
-              <Link to="/quote" className="bg-amber-800 text-black px-8 py-3 rounded-md hover:bg-blue-700 inline-flex items-center">
+              <Link to="/quote" className="bg-amber-500 text-black px-8 py-3 rounded-md hover:bg-amber-800 inline-flex items-center">
                 Get Started <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
-              <Link to="/projects" className="bg-amber-800 text-black px-8 py-3 rounded-md hover:bg-gray-100">
+              <Link to="/projects" className="bg-amber-800 text-black
+               px-8 py-3 rounded-md hover:bg-gray-100">
                 View Our Work
               </Link>
             </div>
