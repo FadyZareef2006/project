@@ -25,9 +25,6 @@ export default function Home() {
               EVICO Contracting L.L.C delivers exceptional construction services with unmatched quality and professionalism.
             </p>
             <div className="space-x-4">
-              <Link to="/quote" className="bg-amber-300 text-black px-8 py-3 rounded-md hover:bg-amber-500 inline-flex items-center">
-                Get Started <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
               <Link to="/projects" className="bg-amber-300 text-black
                px-8 py-3 rounded-md hover:bg-amber-500">
                 View Our Work

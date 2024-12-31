@@ -24,9 +24,6 @@ export default function Navbar() {
             <Link to="/projects" className="hover:text-amber-500">Projects</Link>
             <Link to="/about" className="hover:text-amber-500">About</Link>
             <Link to="/contact" className="hover:text-amber-500">Contact</Link>
-            <Link to="/quote" className="bg-amber-300 text-black px-4 py-2 rounded-md hover:bg-amber-500">
-              Get a Quote
-            </Link>
           </div>
 
           <div className="md:hidden flex items-center">
@@ -49,7 +46,6 @@ export default function Navbar() {
             <Link to="/projects" className="block px-3 py-2 hover:text-amber-500">Projects</Link>
             <Link to="/about" className="block px-3 py-2 hover:text-amber-500">About</Link>
             <Link to="/contact" className="block px-3 py-2 hover:text-amber-500">Contact</Link>
-            <Link to="/quote" className="block px-3 py-2 bg-amber-300 text-black rounded-md hover:bg-amber-500">Get a Quote</Link>
           </div>
         </div>
       )}
