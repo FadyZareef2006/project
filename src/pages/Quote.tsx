@@ -30,40 +30,40 @@ export default function Quote() {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="bg-blue-600 py-20">
+      <section className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-bold text-white mb-4">Request a Quote</h1>
-          <p className="text-blue-100 max-w-2xl mx-auto">
+          <h1 className="text-4xl font-bold text-amber-300 mb-4">Request a Quote</h1>
+          <p className="text-amber-500 max-w-2xl mx-auto">
             Fill out the form below to get a detailed quote for your construction project.
           </p>
         </div>
       </section>
 
       {/* Quote Features */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                icon: <Building2 className="h-8 w-8 text-blue-600" />,
+                icon: <Building2 className="h-8 w-8 text-amber-300" />,
                 title: 'Custom Solutions',
                 description: 'Tailored quotes based on your specific project requirements.'
               },
               {
-                icon: <Calendar className="h-8 w-8 text-blue-600" />,
+                icon: <Calendar className="h-8 w-8 text-amber-300" />,
                 title: 'Fast Response',
                 description: 'Receive your detailed quote within 48 hours.'
               },
               {
-                icon: <DollarSign className="h-8 w-8 text-blue-600" />,
+                icon: <DollarSign className="h-8 w-8 text-amber-300" />,
                 title: 'Competitive Pricing',
                 description: 'Transparent pricing with no hidden costs.'
               }
             ].map((feature, index) => (
               <div key={index} className="text-center">
                 <div className="flex justify-center mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-amber-300">{feature.title}</h3>
+                <p className="text-amber-500">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -71,9 +71,9 @@ export default function Quote() {
       </section>
 
       {/* Quote Form */}
-      <section className="py-20">
+      <section className="bg-black py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-lg">
+          <form onSubmit={handleSubmit} className="bg-amber-300 p-8 rounded-lg shadow-lg">
             <div className="space-y-6">
               {/* Contact Information */}
               <div>
@@ -90,7 +90,7 @@ export default function Quote() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-amber-500 rounded-md focus:ring-amber-500 focus:border-amber-500"
                     />
                   </div>
                   <div>
@@ -104,7 +104,7 @@ export default function Quote() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-amber-500 rounded-md focus:ring-amber-500 focus:border-amber-500"
                     />
                   </div>
                 </div>
@@ -124,7 +124,7 @@ export default function Quote() {
                       value={formData.projectType}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-amber-500 rounded-md focus:ring-amber-500 focus:border-amber-500"
                     >
                       <option value="">Select project type</option>
                       <option value="residential">Residential Construction</option>
@@ -144,7 +144,7 @@ export default function Quote() {
                         name="budget"
                         value={formData.budget}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                        className="w-full px-4 py-2 border border-amber-500 rounded-md focus:ring-amber-500 focus:border-amber-500"
                       >
                         <option value="">Select budget range</option>
                         <option value="<50k">Less than $50,000</option>
@@ -164,7 +164,7 @@ export default function Quote() {
                         name="timeline"
                         value={formData.timeline}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                        className="w-full px-4 py-2 border border-amber-500 rounded-md focus:ring-amber-500 focus:border-amber-500"
                       >
                         <option value="">Select timeline</option>
                         <option value="immediate">Immediate</option>
@@ -186,7 +186,7 @@ export default function Quote() {
                       onChange={handleChange}
                       required
                       rows={6}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-amber-500 rounded-md focus:ring-amber-500 focus:border-amber-500"
                       placeholder="Please provide details about your project..."
                     ></textarea>
                   </div>
@@ -206,7 +206,7 @@ export default function Quote() {
                       name="address"
                       value={formData.address}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-amber-500 rounded-md focus:ring-amber-500 focus:border-amber-500"
                     />
                   </div>
 
@@ -244,7 +244,7 @@ export default function Quote() {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors"
+                className="w-full bg-amber-500 text-black px-6 py-3 rounded-md hover:bg-amber-500 transition-colors"
               >
                 Submit Quote Request
               </button>

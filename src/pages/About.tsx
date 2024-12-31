@@ -12,10 +12,10 @@ export default function About() {
             alt="Construction team"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <div className="absolute inset-0 bg-black opacity-80"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-          <div className="text-white">
+          <div className="text-amber-300">
             <h1 className="text-4xl font-bold mb-4">About EVICO Contracting L.L.C</h1>
             <p className="text-xl max-w-2xl">
               Building excellence through quality craftsmanship and dedication to customer satisfaction since 1998.
@@ -25,34 +25,34 @@ export default function About() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20">
+      <section className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Core Values</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-amber-300 mb-4">Our Core Values</h2>
+            <p className="text-amber-500 max-w-2xl mx-auto">
               These principles guide everything we do and help us deliver exceptional results for our clients.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-amber-300">
             {[
               {
-                icon: <Award className="h-12 w-12 text-blue-600" />,
+                icon: <Award className="h-12 w-12 text-amber-300" />,
                 title: 'Excellence',
                 description: 'Commitment to delivering the highest quality in every project.'
               },
               {
-                icon: <Users className="h-12 w-12 text-blue-600" />,
+                icon: <Users className="h-12 w-12 text-amber-300" />,
                 title: 'Teamwork',
                 description: 'Collaboration and communication are key to our success.'
               },
               {
-                icon: <Clock className="h-12 w-12 text-blue-600" />,
+                icon: <Clock className="h-12 w-12 text-amber-300" />,
                 title: 'Timeliness',
                 description: 'We respect deadlines and deliver projects on schedule.'
               },
               {
-                icon: <Shield className="h-12 w-12 text-blue-600" />,
+                icon: <Shield className="h-12 w-12 text-amber-300" />,
                 title: 'Integrity',
                 description: 'Honest and transparent in all our dealings.'
               }
@@ -60,7 +60,7 @@ export default function About() {
               <div key={index} className="text-center">
                 <div className="flex justify-center mb-4">{value.icon}</div>
                 <h3 className="text-xl font-semibold mb-2">{value.title}</h3>
-                <p className="text-gray-600">{value.description}</p>
+                <p className="text-amber-500">{value.description}</p>
               </div>
             ))}
           </div>
@@ -68,11 +68,11 @@ export default function About() {
       </section>
 
       {/* Team Section */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Leadership Team</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-amber-300 mb-4">Our Leadership Team</h2>
+            <p className="text-amber-500 max-w-2xl mx-auto">
               Meet the experienced professionals who lead our company to success.
             </p>
           </div>
@@ -98,7 +98,7 @@ export default function About() {
                 description: 'Specializes in innovative construction solutions.'
               }
             ].map((member, index) => (
-              <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg">
+              <div key={index} className="bg-amber-300 rounded-lg overflow-hidden shadow-lg">
                 <img
                   src={member.image}
                   alt={member.name}
@@ -106,7 +106,7 @@ export default function About() {
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                  <p className="text-blue-600 mb-3">{member.role}</p>
+                  <p className="text-gray-600 mb-3">{member.role}</p>
                   <p className="text-gray-600">{member.description}</p>
                 </div>
               </div>
@@ -116,19 +116,19 @@ export default function About() {
       </section>
 
       {/* History Section */}
-      <section className="py-20">
+      <section className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Our History</h2>
+              <h2 className="text-3xl font-bold text-amber-300 mb-6">Our History</h2>
               <div className="space-y-4">
-                <p className="text-gray-600">
+                <p className="text-amber-500">
                   Founded in 1998, EVICO Contracting L.L.C has grown from a small local contractor to one of the region's most respected construction companies.
                 </p>
-                <p className="text-gray-600">
+                <p className="text-amber-500">
                   Over the past 25 years, we've completed hundreds of successful projects across residential, commercial, and industrial sectors, earning numerous industry awards and certifications along the way.
                 </p>
-                <p className="text-gray-600">
+                <p className="text-amber-500">
                   Today, we continue to build on our reputation for excellence, embracing new technologies and sustainable building practices while maintaining our commitment to quality craftsmanship and customer satisfaction.
                 </p>
               </div>

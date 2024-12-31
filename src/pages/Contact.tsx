@@ -26,11 +26,11 @@ export default function Contact() {
   return (
     <div className="pt-16">
       {/* Contact Info Section */}
-      <section className="bg-blue-600 py-20">
+      <section className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-4xl font-bold text-white mb-4">Contact Us</h1>
-            <p className="text-blue-100 max-w-2xl mx-auto">
+            <h1 className="text-4xl font-bold text-amber-300 mb-4">Contact Us</h1>
+            <p className="text-amber-500 max-w-2xl mx-auto">
               Get in touch with us for any questions about our services or to discuss your project.
             </p>
           </div>
@@ -38,35 +38,35 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
               {
-                icon: <Phone className="h-8 w-8 text-white" />,
+                icon: <Phone className="h-8 w-8 text-amber-300" />,
                 title: 'Phone',
                 info: '(555) 123-4567',
                 subInfo: 'Mon-Fri 9am-5pm'
               },
               {
-                icon: <Mail className="h-8 w-8 text-white" />,
+                icon: <Mail className="h-8 w-8 text-amber-300" />,
                 title: 'Email',
                 info: 'info@EVICOcontractors.com',
                 subInfo: '24/7 Support'
               },
               {
-                icon: <MapPin className="h-8 w-8 text-white" />,
+                icon: <MapPin className="h-8 w-8 text-amber-300" />,
                 title: 'Office',
                 info: '123 Construction Ave',
                 subInfo: 'City, ST 12345'
               },
               {
-                icon: <Clock className="h-8 w-8 text-white" />,
+                icon: <Clock className="h-8 w-8 text-amber-300" />,
                 title: 'Hours',
                 info: 'Mon-Fri 9am-5pm',
                 subInfo: 'Sat-Sun Closed'
               }
             ].map((item, index) => (
-              <div key={index} className="text-center text-white">
+              <div key={index} className="text-center text-amber-500">
                 <div className="flex justify-center mb-4">{item.icon}</div>
                 <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                 <p className="mb-1">{item.info}</p>
-                <p className="text-blue-200">{item.subInfo}</p>
+                <p className="text-amber-500">{item.subInfo}</p>
               </div>
             ))}
           </div>
@@ -74,15 +74,15 @@ export default function Contact() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20">
+      <section className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+              <h2 className="text-3xl font-bold text-amber-300 mb-6">Send Us a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label htmlFor="name" className="block text-sm font-medium text-amber-300 mb-1">
                       Name
                     </label>
                     <input
@@ -92,11 +92,11 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-amber-500 rounded-md focus:ring-amber-500 focus:border-amber-500"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label htmlFor="email" className="block text-sm font-medium text-amber-300 mb-1">
                       Email
                     </label>
                     <input
@@ -106,14 +106,14 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-amber-500 rounded-md focus:ring-amber-500 focus:border-amber-500"
                     />
                   </div>
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label htmlFor="phone" className="block text-sm font-medium text-amber-300 mb-1">
                       Phone
                     </label>
                     <input
@@ -122,11 +122,11 @@ export default function Contact() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-amber-500 rounded-md focus:ring-amber-500 focus:border-amber-500"
                     />
                   </div>
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label htmlFor="subject" className="block text-sm font-medium text-amber-300 mb-1">
                       Subject
                     </label>
                     <select
@@ -135,7 +135,7 @@ export default function Contact() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-4 py-2 border border-amber-500 rounded-md focus:ring-amber-500 focus:border-amber-500"
                     >
                       <option value="">Select a subject</option>
                       <option value="quote">Request a Quote</option>
@@ -147,7 +147,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="message" className="block text-sm font-medium text-amber-300 mb-1">
                     Message
                   </label>
                   <textarea
@@ -157,13 +157,13 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-4 py-2 border border-amber-500 rounded-md focus:ring-amber-500 focus:border-amber-500"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors"
+                  className="w-full bg-amber-300 text-black px-6 py-3 rounded-md hover:bg-amber-500 transition-colors"
                 >
                   Send Message
                 </button>
@@ -171,16 +171,16 @@ export default function Contact() {
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Visit Our Office</h2>
+              <h2 className="text-3xl font-bold text-amber-300 mb-6">Visit Our Office</h2>
               <div className="aspect-w-16 aspect-h-9 mb-6">
                 {/* Replace with actual map implementation */}
                 <div className="w-full h-[400px] bg-gray-200 rounded-lg"></div>
               </div>
               <div className="prose max-w-none">
-                <p className="text-gray-600">
+                <p className="text-amber-500">
                   Our office is conveniently located in the heart of the city. We welcome visitors during our business hours and are happy to discuss your construction needs in person.
                 </p>
-                <p className="text-gray-600 mt-4">
+                <p className="text-amber-500 mt-4">
                   If you prefer to schedule an appointment, please call us or use the contact form to request a meeting time.
                 </p>
               </div>
